@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Maquetado Tienda de Muebles</title>
+</head>
+<body>
+    <header>
+        <h1 class="nombre">Tienda <span>Muebles</span></h1>
+    </header>
+
+    <div class="contenedor-nav">
+        <nav class="contenedor nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <main class="main-content contenedor">
+        <h2>Contacto</h2>
+        <form class="formulario" action="url">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo" >
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" required>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Apellidos:</label>
+                    <input id="asunto" type="text" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+                <div class="campo">
+                    <label for="pais">País:</label>
+                    <select id="pais">
+                        <option disabled value="">--Seleccione--</option>
+                        <option selected value="PR">Perú</option>
+                        <option value="MX">México</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Envio</legend>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input id="telefono" type="tel" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo:</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="campo">
+                    <label for="date">Fecha:</label>
+                    <input id="date" type="datetime-local" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información adicional</legend>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="10" rows="10"></textarea>
+                </div>
+                <div class="campo">
+                    <label for="categorias">Categoría de Interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Dormitorio">
+                        <option value="Oficina">
+                    </datalist>
+                </div>
+            </fieldset>
+            <div class="campo campo-submit">
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+    
+    <footer class="footer-container">
+        <div class="footer-grid contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-nav">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-nav">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politicas de Privacidad</a>
+                    <a href="#">Terminos del servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-nav">
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Ayuda en linea</a>
+                    <a href="#">Confianza y seguridad</a>
+                </nav>
+            </div>
+        </div>
+        
+        <p class="copyright">Todos los derechos reservados 2022</p>
+    </footer>
+   
+</body>
+</html>
